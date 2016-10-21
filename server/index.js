@@ -11,6 +11,7 @@ let app = express();
 /***************** INIT CUSTOM MODULES *********************/
 
 let pseudoDb = require('../db/store');
+let router = require('./routes');
 
 /******************* INIT MIDDLEWARE ***********************/
 
@@ -24,15 +25,8 @@ app.use(bodyparser.json());
 
 /********************* INIT ROUTES ************f*************/
 
-app.get('/', (req, res) => {
-	res.send('This is an api service from Pocketmon Dex');
-});
-
-app.get('/api', (req, res) => {
-	res.send({
-		message: 'API Successful'
-	});
-});
+router.main(app);
+router.api(app);
 
 /********************* INIT SERVER *************************/
 
