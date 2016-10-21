@@ -30,8 +30,8 @@ const routesAPI = (app) => {
 				id: 1,
 				attributes: {
 					name: 'Bulbasaur',
-					typeA: 'grass',
-					typeB: 'poison'
+					mainType: 'grass',
+					subType: 'poison'
 				},
 			},
 			{
@@ -39,8 +39,8 @@ const routesAPI = (app) => {
 				id: 2,
 				attributes: {
 					name: 'Ivysaur',
-					typeA: 'grass',
-					typeB: 'poison'
+					mainType: 'grass',
+					subType: 'poison'
 				}
 			},
 			{
@@ -48,8 +48,8 @@ const routesAPI = (app) => {
 				id: 3,
 				attributes: {
 					name: 'Venasaur',
-					typeA: 'grass',
-					typeB: 'poison'
+					mainType: 'grass',
+					subType: 'poison'
 				}
 			}]
 		})
