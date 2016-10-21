@@ -26,16 +26,31 @@ const routesAPI = (app) => {
 	app.get('/api/pokemons', (req, res) => {
 		res.send({
 			data: [{
-				name: 'Bulbasaur',
-				id: 1
+				type: 'pokemons',
+				id: 1,
+				attributes: {
+					name: 'Bulbasaur',
+					typeA: 'grass',
+					typeB: 'poison'
+				},
 			},
 			{
-				name: 'Ivysaur',
-				id: 2
+				type: 'pokemons',
+				id: 2,
+				attributes: {
+					name: 'Ivysaur',
+					typeA: 'grass',
+					typeB: 'poison'
+				}
 			},
 			{
-				name: 'Venasaur',
-				id: 3
+				type: 'pokemons'
+				id: 3,
+				attributes: {
+					name: 'Venasaur',
+					typeA: 'grass',
+					typeB: 'poison'
+				}
 			}]
 		})
 	});
