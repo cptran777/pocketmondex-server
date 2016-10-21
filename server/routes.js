@@ -24,19 +24,18 @@ const routesMain = (app) => {
 const routesAPI = (app) => {
 
 	app.get('/api/pokemons', (req, res) => {
-		
-		res.send([{
-			data: {
+
+		res.send({
+			data: [{
 				type: 'pokemons',
 				id: '1',
 				attributes: {
 					name: 'Bulbasaur',
 					mainType: 'grass',
 					subType: 'poison'
-				}
-			}
-		}, {
-			data: {
+				},
+			},
+			{
 				type: 'pokemons',
 				id: '2',
 				attributes: {
@@ -44,19 +43,17 @@ const routesAPI = (app) => {
 					mainType: 'grass',
 					subType: 'poison'
 				}
-			}
-		}, {
-			data: {
+			},
+			{
 				type: 'pokemons',
 				id: '3',
 				attributes: {
 					name: 'Venasaur',
 					mainType: 'grass',
-					subtype: 'poison'
+					subType: 'poison'
 				}
-			}
-		}]);
-
+			}]
+		})
 	});
 
 	app.get('/api/pokemons/:pokeId', (req, res) => {
