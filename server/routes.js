@@ -44,7 +44,7 @@ const routesAPI = (app) => {
 				}
 			},
 			{
-				type: 'pokemons'
+				type: 'pokemons',
 				id: 3,
 				attributes: {
 					name: 'Venasaur',
